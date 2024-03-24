@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background-image: url('fondobanco1.png');
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200; 
+}
+
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: -95px; 
+    margin-right: 40px;
+}
+
+.navbar-brand img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.navbar-brand-text {
+    margin-left: 90; 
+}
+
+
+
+.navbar-brand-text:hover {
+    color: #63f800; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #63f800 !important;
+}
+
+.dropdown-item:hover {
+    color: #2e7400 !important; 
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-menu {
+    z-index: 5000;
+}
+
+
+#navbarDropdownEventos .fas.fa-calendar-alt.fa-lg::before {
+    content: "\f00c"; 
+    font-family: "Font Awesome 6 Free"; 
+    margin-right: 5px; 
+}
+
+#navbarDropdownMovimientos .fas.fa-exchange-alt.fa-lg::before {
+    content: "\f2f9"; 
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+}

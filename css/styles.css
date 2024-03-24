@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 35%, rgba(185, 185, 185, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 35%, rgba(185, 185, 185, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 35%, rgba(185, 185, 185, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#b9b9b9", GradientType=1);
+}
+
+.contenedor {
+    display: none;
+}
+
+/* PARALLAX EFFECT */
+#scroll-animate {
+    overflow: hidden;
+}
+
+#scroll-animate-main {
+    width: 100%;
+    left: 0;
+    position: fixed;
+}
+
+#heightPage,
+#heightScroll {
+    width: 10px;
+    top: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+#heightPage {
+    left: 0;
+}
+
+#heightScroll {
+    right: 0;
+}
+
+.wrapper-parallax {
+    margin-top: 100%;
+    margin-bottom: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.603);
+}
+
+header {
+    width: 100% !important;
+    height: 100% !important;
+    background: url("../RES/bannerbank.png") no-repeat 50% 50%;
+    top: 0 !important;
+    position: fixed !important;
+    z-index: -1 !important;
+}
+
+header,
+#scroll-animate-main {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    transition-property: all;
+
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.header-text {
+    position: relative !important;
+    top: 40%;
+    margin: 0 auto !important;
+    padding: 2.5% !important;
+    color: #ededed;
+    width: 60% !important;
+    height: 20vh !important;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(0, 0, 0, 0.616) !important;
+    box-shadow: 10px 10px 20px #0000;
+}
+
+.header-text h2 {
+    font-weight: 500;
+}
+
+.content {
+    height: 130.5vh !important;
+    min-height: 1000px !important;
+    background: #ededed !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.aprob{
+    height: 40vh;
+    padding: 4% 2% !important;
+}
+
+.aprob h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 2% !important;
+}
+
+.sucursales{
+    padding: 4% 2% !important;
+    height: 40vh;
+    width: 100% !important;
+    background-color: rgb(121, 121, 121);
+    color: #ededed;
+}
+
+.sucursales h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 2% !important;
+}
+
+.movimientos{
+    padding: 4% 2% !important;
+    height: 40vh;
+    width: 100% !important;
+}
+
+.movimientos h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 2% !important;
+}
+
+footer{
+    margin: 0 auto;
+    padding: 2% 2% !important;
+    height: 10vh;
+    width: 100%;
+    background-color: #2b2b2b;
+    font-family: "Roboto", sans-serif;
+    color: #ededed;
+}
+
+footer h1{
+    font-size: 1.5rem !important;
+}
+/* END OF PARLLAX EFFECT */
+
+
+/* NAVBAR */
+.navbar {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
+
+    width: 100%;
+    height: 8.5vh;
+    position: fixed !important;
+    background-color: rgba(0, 22, 3, 0.747) !important;
+    padding: 15px;
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10 !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: -95px;
+    margin-right: 40px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* .navbar-brand-text {
+    margin-left: 90; 
+} */
+
+.navbar-brand-text {
+    color: #fff !important;
+    transition: 1s !important;
+}
+
+
+.navbar-brand-text:hover {
+    color: #63f800 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #63f800 !important;
+}
+
+.dropdown-item:hover {
+    color: #2e7400 !important;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-menu {
+    z-index: 5000;
+}
+
+
+#navbarDropdownEventos .fas.fa-calendar-alt.fa-lg::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+}
+
+#navbarDropdownMovimientos .fas.fa-exchange-alt.fa-lg::before {
+    content: "\f2f9";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+}
+
+/* END OF NAVBAR */
